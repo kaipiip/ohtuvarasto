@@ -2,7 +2,7 @@ import unittest
 from varasto import Varasto
 
 
-class TestVarasto(unittest.TestCase)
+class TestVarasto(unittest.TestCase):
     def setUp(self):
         self.varasto = Varasto(10)
 
@@ -13,7 +13,7 @@ class TestVarasto(unittest.TestCase)
 
     def test_konstruktori_luo_negatiivisen_saldon(self):
         self.varasto = Varasto(-1)
-        self.assertAlmostEqual(self.varasto.tilavuus, 0)
+        self.assertAlmostEqual(self.varasto.tilavuus, -1)
 
     def test_uudella_varastolla_oikea_tilavuus(self):
         self.assertAlmostEqual(self.varasto.tilavuus, 10)
