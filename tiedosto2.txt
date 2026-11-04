@@ -1,3 +1,0 @@
-Muutoksia testattavaksi
-git add -p
-komennolla
