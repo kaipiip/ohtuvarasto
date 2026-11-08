@@ -25,8 +25,7 @@ def virhe_tilanteita():
     huono = Varasto(100.0, -50.7)
     print(huono)
 
-# Pylint testi pitkä rivi yli 80 merkkiä 123456789012345678901244 040249 08279371
-def lisaaVarastoonOlutta(olutta, maara):
+def lisaa_varastoon_olutta(olutta, maara):
     print(f"Olutvarasto: {olutta}")
     print(f"olutta.lisaa_varastoon({maara})")
     olutta.lisaa_varastoon(maara)
@@ -66,7 +65,7 @@ def main():
 
     virhe_tilanteita()
 
-    lisaaVarastoonOlutta(olutta, 1000.0)
+    lisaa_varastoon_olutta(olutta, 1000.0)
 
     lisaa_varastoon_mehua(mehua, -666.0)
 
